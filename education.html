@@ -18,20 +18,63 @@
     .timeline-item { margin-bottom: 30px; display: flex; flex-direction: row; align-items: center; }
     .timeline-year { font-weight: bold; width: 100px; text-align: right; padding-right: 20px; color: #e84393; }
     .timeline-content { background: #ffffff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex-grow: 1; }
+    .menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    animation: slideDown 0.4s ease forwards;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  nav a {
+    padding: 15px;
+    border-top: 1px solid #f0f0f0;
+  }
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
   </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="research_tech.html">Research & Tech</a>
-  <a href="skills.html">Skills</a>
-  <a href="education.html">Education</a>
-  <a href="creative_tech.html">Creative Tech</a>
-  <a href="teaching_workshops.html">Teaching</a>
-  <a href="associative_activities.html">Associative</a>
-  <a href="audiovideo.html">Audio/Video</a>
-  <a href="contact.html">Contact</a>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research_tech.html">Research & Tech</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="creative_tech.html">Creative Tech</a>
+    <a href="teaching_workshops.html">Teaching</a>
+    <a href="associative_activities.html">Associative</a>
+    <a href="audiovideo.html">Audio/Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <section>
@@ -69,6 +112,15 @@
   </div>
 
 </section>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
