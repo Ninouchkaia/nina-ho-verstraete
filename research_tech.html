@@ -16,7 +16,6 @@
     h1, h2, h3 { text-align: center; }
     p, ul { margin-bottom: 20px; line-height: 1.6; }
     ul { padding-left: 20px; }
-    html { scroll-behavior: smooth; }
     .toc { background: #ffffff; padding: 20px; margin-bottom: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     .toc a { display: block; margin-bottom: 10px; text-decoration: none; color: #3498db; font-weight: bold; }
     .toc a:hover { text-decoration: underline; }
@@ -28,36 +27,11 @@
   user-select: none;
 }
 
-.toc {
-  background: #ffffff;
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 80px; /* en dessous de la nav fixe */
-  z-index: 500;
-}
-.toc a {
-  display: block;
-  margin: 8px 0;
-  color: #2c3e50;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.toc a:hover {
-  color: #27ae60;
-  text-decoration: underline;
-}
-
 .nav-links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -158,27 +132,21 @@
   <h1>Research & Technology</h1>
 
   <div class="toc">
-  <h2>Table of Contents</h2>
-  <a href="#vision">Vision & Overview</a>
-  <a href="#themes">Research Themes</a>
-  <a href="#cancer">Cancer Research & Immunotherapy</a>
-  <a href="#covid">Network Medicine & COVID-19</a>
-  <a href="#systems">Systems Biology & Modeling</a>
-  <a href="#transcription">Transcriptional Regulation</a>
-  <a href="#proteins">Protein Families & Structural Bioinformatics</a>
-  <a href="#software">Software Engineering & Data Integration</a>
-  <a href="#tools">Tools & Technologies</a>
-  <a href="#presentations">Scientific Presentations</a>
-  <a href="#awards">Awards & Distinctions</a>
-  <a href="#community">Community Engagement</a>
-</div>
+    <h2>Table of Contents</h2>
+    <a href="#vision">Vision & Overview</a>
+    <a href="#themes">Research Themes</a>
+    <a href="#tools">Tools & Technologies</a>
+    <a href="#presentations">Scientific Presentations</a>
+    <a href="#awards">Awards & Distinctions</a>
+    <a href="#community">Community Engagement</a>
+  </div>
 
   <h2 id="vision">Vision & Overview</h2>
   <p>I am a bioinformatics researcher and data scientist specializing in functional genomics, computational modeling, and biological data integration. My work bridges academic research and industrial applications, with a focus on life sciences, complex systems, and technological innovation.</p>
 
   <h2 id="themes">Research Themes</h2>
 
-  <h3 id="cancer">Cancer Research & Immunotherapy</h3>
+  <h3>Cancer Research & Immunotherapy</h3>
   <ul>
     <li><strong>Experience – INSERM (2019–2023)</strong>: Agent-based modeling of tumor-associated macrophages (TAMs) in chronic lymphocytic leukemia (CLL), tumor microenvironment deconvolution, multi-omics integration in AML (LungPredict project).</li>
     <li><strong>Publication</strong>: Verstraete et al. (2023). Agent-based model of monocyte differentiation in CLL. <i>iScience</i>.</li>
@@ -186,21 +154,21 @@
     <li><strong>Publication</strong>: Xie et al. (2021). GEM-DeCan for immune profiling. <i>bioRxiv</i>.</li>
   </ul>
 
-  <h3 id="covid">Network Medicine & COVID-19</h3>
+  <h3>Network Medicine & COVID-19</h3>
   <ul>
     <li><strong>Experience – INSERM (2019–2023)</strong>: Integration of proteins, diseases, drugs, and symptoms for COVID-19 via CovMulNet19; modeling SARS-CoV-2 interactome using multiscale physics.</li>
     <li><strong>Publication</strong>: Verstraete et al. (2020). CovMulNet19: COVID-19 network medicine. <i>Netw Syst Med</i>.</li>
     <li><strong>Publication</strong>: Ghavasieh et al. (2021). Pan-viral interactome & SARS-CoV-2. <i>Commun Phys</i>.</li>
   </ul>
 
-  <h3 id="systems">Systems Biology & Modeling</h3>
+  <h3>Systems Biology & Modeling</h3>
   <ul>
     <li><strong>Experience – INSERM</strong>: Agent-based simulations using NetLogo & OpenMole, model-based interpretation of experimental results in oncology.</li>
     <li><strong>Publication</strong>: Verstraete et al. (2022). Model of TAM differentiation in CLL. <i>ESCS Symposium</i>.</li>
     <li><strong>Publication</strong>: Verstraete et al. (2020). CovMulNet19 integrates network layers. <i>Netw Syst Med</i>.</li>
   </ul>
 
-  <h3 id="transcription">Transcriptional Regulation & Structural Bioinformatics</h3>
+  <h3>Transcriptional Regulation & Structural Bioinformatics</h3>
   <ul>
     <li><strong>PhD Research – CNRS / ENS Paris (2009–2012)</strong>: Study of P-TEFb, HEXIM1, HIV-1 Tat using FRET, FRAP, confocal microscopy, yeast two-hybrid.</li>
     <li><strong>Publication</strong>: Verstraete et al. (2014). Cyclin T1 mutation disrupting Tat/HEXIM1 binding. <i>Retrovirology</i>.</li>
@@ -209,14 +177,14 @@
     <li><strong>Publication</strong>: Marz et al. (2009). Evolution of 7SK RNA. <i>Mol Biol Evol</i>.</li>
   </ul>
 
-  <h3 id="proteins">Protein Families & Structural Bioinformatics</h3>
+  <h3>Protein Families & Structural Bioinformatics</h3>
   <ul>
     <li><strong>Postdoc – CONICET (2013–2015)</strong>: Study of repeat-motif proteins, motif detection pipelines, database integration.</li>
     <li><strong>Publication</strong>: Parra et al. (2015). Ankyrin protein family structure/energy. <i>PLoS Comput Biol</i>.</li>
     <li><strong>Publication</strong>: Krick et al. (2014). Protein diversity & metabolism. <i>Mol Biol Evol</i>.</li>
   </ul>
 
-  <h3 id="software">Software Engineering & Data Integration</h3>
+  <h3>Software Engineering & Data Integration</h3>
   <ul>
     <li><strong>Software Engineer – Capgemini / Airbus (2017–2019)</strong>: Migration (Windchill 6→11), Shell→Java, PLM dev, Oracle SQL, SOAP services, 3DEXPERIENCE data integration.</li>
     <li><strong>Publication</strong>: Fernandez et al. (2017). Gekipe interface for audiovisual performance. <i>NIME</i>.</li>
@@ -256,7 +224,6 @@
     <li>Co-organizer – YRLS Congress</li>
   </ul>
 </section>
-
 
 
 <script> <!-- menu burger -->
