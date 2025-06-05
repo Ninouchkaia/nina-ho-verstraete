@@ -3,62 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research & Tech - Nina Verstraete</title>
+  <title>Research & Tech – Nina Verstraete</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta name="description" content="Research and technology activities of Nina Verstraete: bioinformatics, computational modeling, software engineering.">
-  <meta name="keywords" content="Bioinformatics, Data Science, Computational Modeling, Research, Complex Systems">
+  <meta name="description" content="Research & Technical experiences of Nina Verstraete: Bioinformatics, Modeling, Multi-omics, Network Analysis.">
+  <meta name="keywords" content="Bioinformatics, Modeling, Multi-omics, Network Analysis, Tumor Immunology, SARS-CoV-2, Drug Repositioning">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to bottom, #d4fc79, #96e6a1); }
-    nav { background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; display: flex; justify-content: center; z-index: 1000; }
-    nav a { margin: 1em; text-decoration: none; color: #333; font-weight: bold; transition: color 0.3s ease, border-bottom 0.3s ease; border-bottom: 2px solid transparent; }
-    nav a:hover { color: #27ae60; border-bottom: 2px solid #27ae60; }
-    section { padding: 100px 20px 50px 20px; max-width: 900px; margin: auto; }
-    h1, h2, h3 { text-align: center; }
-    p, ul { margin-bottom: 20px; line-height: 1.6; }
-    ul { padding-left: 20px; }
-    .toc { background: #ffffff; padding: 20px; margin-bottom: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .toc a { display: block; margin-bottom: 10px; text-decoration: none; color: #3498db; font-weight: bold; }
-    .toc a:hover { text-decoration: underline; }
-    .menu-toggle {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 10px;
-  user-select: none;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    text-align: center;
-    animation: slideDown 0.4s ease forwards;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  nav a {
-    padding: 15px;
-    border-top: 1px solid #f0f0f0;
-  }
-}
-
-@keyframes slideDown {
-  0% { transform: translateY(-20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
-}
-
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background: linear-gradient(to bottom, #e0c3fc, #8ec5fc);
+    }
+    nav { 
+      background: #ffffff; 
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      display: flex; 
+      justify-content: center; 
+      z-index: 1000; 
+    }
+    nav a { 
+      margin: 1em; 
+      text-decoration: none; 
+      color: #333; 
+      font-weight: bold; 
+      transition: color 0.3s ease, border-bottom 0.3s ease; 
+      border-bottom: 2px solid transparent; 
+    }
+    nav a:hover { 
+      color: #6c5ce7; 
+      border-bottom: 2px solid #6c5ce7; 
+    }
+    section { 
+      padding: 100px 20px 50px 20px; 
+      max-width: 900px; 
+      margin: auto; 
+    }
+    h1, h2 { 
+      text-align: center; 
+      margin-bottom: 20px; 
+    }
+    h3 { 
+      margin-top: 30px; 
+      margin-bottom: 10px; 
+      color: #6c5ce7; 
+    }
+    p, ul { 
+      margin-bottom: 20px; 
+      line-height: 1.6; 
+    }
+    ul { 
+      padding-left: 20px; 
+    }
+    .experience-header { 
+      text-align: left; 
+      margin-top: 40px; 
+      margin-bottom: 20px; 
+    }
+    .experience-header h3 { 
+      display: inline-block; 
+      margin: 0; 
+    }
+    .experience-header span { 
+      display: block; 
+      font-style: italic; 
+      color: #555; 
+      margin-top: 4px; 
+    }
+    .bullet-list { 
+      list-style-type: disc; 
+      margin-left: 20px; 
+    }
+    .bullet-list li { 
+      margin-bottom: 8px; 
+    }
+    .doi-link { 
+      font-weight: normal; 
+      color: #0984e3; 
+      text-decoration: none; 
+    }
+    .doi-link:hover { 
+      text-decoration: underline; 
+    }
+    .menu-toggle { 
+      display: none; 
+      font-size: 30px; 
+      cursor: pointer; 
+      padding: 10px; 
+      user-select: none; 
+    }
+    .nav-links { 
+      display: flex; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      .nav-links { 
+        display: none; 
+        flex-direction: column; 
+        background-color: #ffffff; 
+        width: 100%; 
+        text-align: center; 
+        animation: slideDown 0.4s ease forwards; 
+      }
+      .nav-links.active { display: flex; }
+      nav a { 
+        padding: 15px; 
+        border-top: 1px solid #f0f0f0; 
+      }
+    }
+    @keyframes slideDown { 
+      0% { transform: translateY(-20px); opacity: 0; } 
+      100% { transform: translateY(0); opacity: 1; } 
+    }
   </style>
 </head>
 <body>
@@ -67,9 +127,10 @@
   <div class="menu-toggle" id="menu-toggle">&#9776;</div>
   <div class="nav-links" id="nav-links">
     <a href="index.html">Home</a>
-    <a href="research_tech.html">Research & Tech</a>
+    <a href="research_tech.html" class="active">Research & Tech</a>
     <a href="skills.html">Skills</a>
     <a href="education.html">Education</a>
+    <a href="publications.html">Publications</a>
     <a href="creative_tech.html">Creative Tech</a>
     <a href="teaching_workshops.html">Teaching</a>
     <a href="associative_activities.html">Associative</a>
@@ -78,123 +139,68 @@
   </div>
 </nav>
 
-<!-- <section>
-  <h1>Research & Technology</h1>
-
-  <div class="toc">
-    <h2>Table of Contents</h2>
-    <a href="#overview">Overview</a>
-    <a href="#bioinformatics">Bioinformatics & Computational Research</a>
-    <a href="#software">Software Engineering Experience</a>
-    <a href="#presentations">Scientific Presentations & Workshops</a>
-    <a href="#publications">Publications</a>
-    <a href="#awards">Awards & Distinctions</a>
-    <a href="#community">Community Engagement</a>
-  </div>
-
-  <h2 id="overview">Overview</h2>
-  <p>I am a bioinformatics researcher and data scientist specialized in functional genomics, computational modeling, and data integration across biological systems. My work spans both academic research and industrial applications, at the intersection of life sciences, complex systems modeling, and information technologies.</p>
-
-  <h2 id="bioinformatics">Bioinformatics & Computational Research</h2>
-  <p>Postdoc at INSERM, Argentina postdoc at CONICET, PhD at CNRS ENS Paris. Research on cancer, immune modeling, network medicine, structural bioinformatics.</p>
-
-  <h2 id="software">Software Engineering Experience</h2>
-  <p>Software Engineer at Capgemini for Airbus. Application management, PDM data migration, PLM development, Oracle SQL, Agile methodologies.</p>
-
-  <h2 id="presentations">Scientific Presentations & Workshops</h2>
-  <ul>
-    <li>SysMod2021 – Systems Biology and Bioinformatics (Online)</li>
-    <li>ISMB ECCB 2021 – Agent-Based Tumor Macrophage Differentiation (Poster Prize)</li>
-    <li>Networks 2021 – COVID-19 Network Medicine</li>
-    <li>Young Researchers in Life Sciences – Institut Pasteur</li>
-  </ul>
-
-  <h2 id="publications">Publications</h2>
-  <p>List of scientific publications and contributions in Molecular Biology and Evolution, Retrovirology, PLoS Computational Biology, Network and Systems Medicine, iScience, Communications Physics, and more.</p>
-
-  <h2 id="awards">Awards & Distinctions</h2>
-  <ul>
-    <li>1st Prize – International Poster Presentation (ISMB-ECCB 2021)</li>
-    <li>Competitive Research Grant – CONICET, Argentina</li>
-    <li>Young Researcher Funding – SIDACTION</li>
-  </ul>
-
-  <h2 id="community">Community Engagement</h2>
-  <ul>
-    <li>ISCB Student Council and SOLBIO Member</li>
-    <li>Vice-President of SPIBENS at ENS Paris</li>
-    <li>Organizer for Young Researchers in Life Sciences Congress (YRLS)</li>
-  </ul>
-
-</section> -->
-
 <section>
   <h1>Research & Technology</h1>
-
-  <div class="toc">
-    <h2>Table of Contents</h2>
-    <a href="#vision">Vision & Overview</a>
-    <a href="#themes">Research Themes</a>
-    <a href="#tools">Tools & Technologies</a>
-    <a href="#presentations">Scientific Presentations</a>
-    <a href="#awards">Awards & Distinctions</a>
-    <a href="#community">Community Engagement</a>
-  </div>
 
   <h2 id="vision">Vision & Overview</h2>
   <p>I am a bioinformatics researcher and data scientist specializing in functional genomics, computational modeling, and biological data integration. My work bridges academic research and industrial applications, with a focus on life sciences, complex systems, and technological innovation.</p>
 
-  <h2 id="themes">Research Themes</h2>
-
-  <h3>Cancer Research & Immunotherapy</h3>
-  <ul>
-    <li><strong>Experience – INSERM (2019–2023)</strong>: Agent-based modeling of tumor-associated macrophages (TAMs) in chronic lymphocytic leukemia (CLL), tumor microenvironment deconvolution, multi-omics integration in AML (LungPredict project).</li>
-    <li><strong>Publication</strong>: Verstraete et al. (2023). Agent-based model of monocyte differentiation in CLL. <i>iScience</i>.</li>
-    <li><strong>Publication</strong>: Marku et al. (2020). Boolean model of macrophage polarization. <i>Cancers</i>.</li>
-    <li><strong>Publication</strong>: Xie et al. (2021). GEM-DeCan for immune profiling. <i>bioRxiv</i>.</li>
-  </ul>
-
-  <h3>Network Medicine & COVID-19</h3>
-  <ul>
-    <li><strong>Experience – INSERM (2019–2023)</strong>: Integration of proteins, diseases, drugs, and symptoms for COVID-19 via CovMulNet19; modeling SARS-CoV-2 interactome using multiscale physics.</li>
-    <li><strong>Publication</strong>: Verstraete et al. (2020). CovMulNet19: COVID-19 network medicine. <i>Netw Syst Med</i>.</li>
-    <li><strong>Publication</strong>: Ghavasieh et al. (2021). Pan-viral interactome & SARS-CoV-2. <i>Commun Phys</i>.</li>
-  </ul>
-
-  <h3>Systems Biology & Modeling</h3>
-  <ul>
-    <li><strong>Experience – INSERM</strong>: Agent-based simulations using NetLogo & OpenMole, model-based interpretation of experimental results in oncology.</li>
-    <li><strong>Publication</strong>: Verstraete et al. (2022). Model of TAM differentiation in CLL. <i>ESCS Symposium</i>.</li>
-    <li><strong>Publication</strong>: Verstraete et al. (2020). CovMulNet19 integrates network layers. <i>Netw Syst Med</i>.</li>
-  </ul>
-
-  <h3>Transcriptional Regulation & Structural Bioinformatics</h3>
-  <ul>
-    <li><strong>PhD Research – CNRS / ENS Paris (2009–2012)</strong>: Study of P-TEFb, HEXIM1, HIV-1 Tat using FRET, FRAP, confocal microscopy, yeast two-hybrid.</li>
-    <li><strong>Publication</strong>: Verstraete et al. (2014). Cyclin T1 mutation disrupting Tat/HEXIM1 binding. <i>Retrovirology</i>.</li>
-    <li><strong>Publication</strong>: Verstraete et al. (2012). PhD Thesis. <i>Paris 6</i>.</li>
-    <li><strong>Publication</strong>: Kuzmina et al. (2014). Cyclin T1 interaction dynamics. <i>Retrovirology</i>.</li>
-    <li><strong>Publication</strong>: Marz et al. (2009). Evolution of 7SK RNA. <i>Mol Biol Evol</i>.</li>
-  </ul>
-
-  <h3>Protein Families & Structural Bioinformatics</h3>
-  <ul>
-    <li><strong>Postdoc – CONICET (2013–2015)</strong>: Study of repeat-motif proteins, motif detection pipelines, database integration.</li>
-    <li><strong>Publication</strong>: Parra et al. (2015). Ankyrin protein family structure/energy. <i>PLoS Comput Biol</i>.</li>
-    <li><strong>Publication</strong>: Krick et al. (2014). Protein diversity & metabolism. <i>Mol Biol Evol</i>.</li>
-  </ul>
-
-  <h3>Software Engineering & Data Integration</h3>
-  <ul>
-    <li><strong>Software Engineer – Capgemini / Airbus (2017–2019)</strong>: Migration (Windchill 6→11), Shell→Java, PLM dev, Oracle SQL, SOAP services, 3DEXPERIENCE data integration.</li>
-    <li><strong>Publication</strong>: Fernandez et al. (2017). Gekipe interface for audiovisual performance. <i>NIME</i>.</li>
+  <h2 id="experiences">Experiences</h2>
+  <div class="experience-header">
+    <h3>Postdoctoral Researcher in Bioinformatics &amp; Modeling</h3>
+    <span>Inserm · CDD &nbsp;|&nbsp; 2019 – 2023 (4 years)<br>Centre de Recherche en Cancérologie de Toulouse<br>NetB(IO)² Team – Vera Pancaldi</span>
+  </div>
+  <p>▶ Contributed to several research projects combining modeling, multi‐omics approaches and network analysis. Topics included tumor‐immune dynamics, clonal evolution, and cellular perturbations by emerging viruses.</p>
+  <ul class="bullet-list">
+    <li>
+      <strong>Multi-agent modeling of cellular interactions in tumors</strong><br>
+      ▹ Developed NetLogo simulations of cellular behaviors (proliferation, recruitment, differentiation, immune interactions) in the tumor microenvironment<br>
+      ▹ Automated large‐scale parameter explorations using OpenMole<br>
+      📄 <a class="doi-link" href="https://doi.org/10.1016/j.isci.2023.106897" target="_blank">DOI: 10.1016/j.isci.2023.106897</a>
+    </li>
+    <li>
+      <strong>Boolean network modeling of monocyte differentiation in chronic lymphocytic leukemia</strong><br>
+      ▹ Inferred transcription factor activity from transcriptomic microarray data<br>
+      ▹ Identified key regulators associated with M1, M2, and NLC (nurse‐like cells) macrophage states<br>
+      ▹ Integrated results into a dynamic macrophage polarization model for in silico attractor and perturbation analysis<br>
+      📄 <a class="doi-link" href="https://doi.org/10.3390/cancers12123664" target="_blank">DOI: 10.3390/cancers12123664</a>
+    </li>
+    <li>
+      <strong>Predicting immunotherapy response in lung cancer</strong><br>
+      ▹ Contributed to building an RNA‐seq analysis pipeline: preprocessing, alignment, normalization, and immune cell deconvolution<br>
+      ▹ Applied regression models to correlate transcriptomic signatures with clinical responses<br>
+      📄 <a class="doi-link" href="https://doi.org/10.1101/2021.04.09.439207" target="_blank">DOI: 10.1101/2021.04.09.439207</a> (preprint)
+    </li>
+    <li>
+      <strong>Transcriptomic analysis of the tumor microenvironment in lung cancer</strong><br>
+      ▹ Processed bulk RNA‐seq data: quality control, alignment, quantification, differential expression<br>
+      ▹ Performed immune cell deconvolution and inferred transcription factor activity from expression profiles
+    </li>
+    <li>
+      <strong>Drug repositioning via network medicine (COVID-19)</strong><br>
+      ▹ Implemented bootstrap analysis to assess robustness of proximity scores between drugs, viral proteins, and diseases within a biological network<br>
+      ▹ Validated statistical significance by comparison to randomized network models<br>
+      📄 <a class="doi-link" href="https://doi.org/10.1089/nsm.2020.0011" target="_blank">DOI: 10.1089/nsm.2020.0011</a>
+    </li>
+    <li>
+      <strong>Functional analysis of cellular perturbations induced by SARS-CoV-2</strong><br>
+      ▹ Conducted enrichment analyses (Gene Ontology, Reactome) and gene clustering on perturbation datasets<br>
+      ▹ Contributed to the systems‐level characterization of SARS-CoV-2–induced cellular processes<br>
+      📄 <a class="doi-link" href="https://doi.org/10.1038/s42005-021-00633-0" target="_blank">DOI: 10.1038/s42005-021-00633-0</a>
+    </li>
+    <li>
+      <strong>Clonal and transcriptomic dynamics in response to anticancer treatments</strong><br>
+      ▹ Analyzed lentiviral barcoding data: normalization, filtering, differential analysis (DESeq2), clustering<br>
+      ▹ Processed scRNA-seq data to identify expression patterns linked to clonal sensitivity and resistance<br>
+      📢 <em>Conference:</em> NetBioMed 2022 (July 18–19, 2022)
+    </li>
   </ul>
 
   <h2 id="tools">Tools & Technologies</h2>
   <ul>
     <li>Modeling: NetLogo, OpenMole</li>
-    <li>Bioinfo: MySQL, sequence alignment, enrichment analysis</li>
-    <li>Dev: Java JEE, Shell, Tomcat, SOAP, Oracle SQL</li>
+    <li>Bioinformatics: MySQL, sequence alignment, enrichment analysis</li>
+    <li>Development: Java JEE, Shell, Tomcat, SOAP, Oracle SQL</li>
     <li>Experimental: FRET, FRAP, FLIP, confocal, Y2H</li>
     <li>Methodologies: Agile Scrum, automated testing, documentation</li>
   </ul>
@@ -205,7 +211,7 @@
     <li>SysMod 2021 – Systems Biology (Online)</li>
     <li>YRLS – Institut Pasteur, Paris</li>
     <li>SOLBIO – Argentina</li>
-    <li>EMBO, ICGEB, ISCB LA – Workshops & Symposia</li>
+    <li>EMBO, ICGEB, ISCB LA – Workshops &amp; Symposia</li>
   </ul>
 
   <h2 id="awards">Awards & Distinctions</h2>
@@ -219,12 +225,12 @@
 
   <h2 id="community">Community Engagement</h2>
   <ul>
-    <li>ISCB Student Council & SOLBIO Member</li>
+    <li>ISCB Student Council &amp; SOLBIO Member</li>
     <li>Vice-President – SPIBENS, ENS Paris</li>
     <li>Co-organizer – YRLS Congress</li>
   </ul>
-</section>
 
+</section>
 
 <script>
   const menuToggle = document.getElementById('menu-toggle');
